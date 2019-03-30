@@ -13,7 +13,7 @@ export class CervejaService {
   public dados = [];
 
   public carregaDados(callback) {
-    return this.httpClient.get(`https://alfa2019-mgj.firebaseio.com/cervejas.json`)
+    return this.httpClient.get(`https://alfa2019-3a196.firebaseio.com/cervejas.json`)
       .toPromise().then(response => {
         this.dados = [];
         Object.keys(response).forEach(key => {
