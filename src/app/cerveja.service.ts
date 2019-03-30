@@ -22,6 +22,7 @@ export class CervejaService {
             nome: response[key].nome,
             nota: response[key].nota
           });
+          this.dados.sort((a,b)=>a.nota>b.nota?-1:1);
           callback();
         });
       }).catch(
